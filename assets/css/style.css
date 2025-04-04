@@ -1,0 +1,85 @@
+/* Styling for the navigation menu */
+ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+/* Styling for the header */
+h1 {
+  text-align: center;
+  background-color: #111;
+  color: white;
+  margin-top: 60px; /* Ensures the header doesn't hide behind the fixed nav */
+}
+
+/* Image in the section */
+section img {
+  width: 100%;
+  height: auto;
+}
+
+/* Main section container for the boxes */
+main {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  height: 100%; 
+}
+
+/* Container for the boxes (flex layout) */
+.container {
+  display: flex;
+  flex-direction: row; /* Align items in a row */
+  gap: 20px; /* Space between boxes */
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Styling for each box */
+.box {
+  background-color: #4CAF50;
+  color: blue;
+  padding: 20px;
+  flex: 1 1 30%; /* Flex-grow, flex-shrink, flex-basis (makes them flexible) */
+  min-width: 200px; /* Prevent them from becoming too narrow */
+  text-align: center;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 2px solid black; /* Makes the box more visible */
+  height: 200px; /* Ensures the boxes have a fixed height */
+}
+
+/* Make sure the footer is at the bottom */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
